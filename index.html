@@ -1,14 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>LUXE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxe Streetwear</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background: black;
+    }
+
+    .hero {
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .hero p {
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-<body style=\"background:black; color:white; text-align:center; padding:50px;\">
 
-<h1>LUXE</h1>
-<p>DROP 001 — Limited Release</p>
+<body>
 
-<button style=\"background:pink; padding:10px 20px; border:none; border-radius:10px;\">Shop Now</button>
+  <header>LUXE STREETWEAR</header>
+
+  <section class="hero">
+    <h1>New Drop Available</h1>
+    <p>Minimal. Clean. Premium Streetwear.</p>
+    <button class="btn">Shop Now</button>
+  </section>
+
+  <section class="products">
+    <div class="card">Hoodie</div>
+    <div class="card">T-Shirt</div>
+    <div class="card">Cargo Pants</div>
+  </section>
+
+  <footer>© 2026 Luxe Streetwear</footer>
 
 </body>
 </html>
